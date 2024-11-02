@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> calculadora </h1>
+    <h2> buen dia</h2>
+    <h3>mocoso</h3>
+
+    <script>
+        var opcion = 1;
+
+        function saludar() {
+            document.write("hola");
+        }
+
+        function adios(nombre) {
+            document.write("<br>");
+            document.write("adios" + ' ' + nombre);
+        }
+        function suma() {
+            let n1 = parseInt(prompt("Digite un numero"));
+            let n2 = parseInt(prompt("Digite otro numero"));
+            alert("Suma: " + n1+n2)
+          document.write("<p>suma: </p>" + (n1 + n2));
+        }
+
+
+        function resta() {
+            let n1 = parseInt(prompt("Digite un numero"));
+            let n2 = parseInt(prompt("Digite otro numero"));
+            document.write("resta: ", (n1 - n2));
+        }
+       
+
+
+            function menu() 
+            {
+                return prompt("1-suma \n" +
+                    "2-resta \n" +
+                    "3-salir \n" +
+                    "digite una opcion");
+            }2
+            
+            do {
+                opcion =  menu();
+
+               alert(typeof opcion);
+           
+                switch (opcion) {
+                    case '1': suma();
+                        break;
+                    case '2': resta();
+                        break;
+                }
+
+            } while (opcion != 3);
+
+    </script>
+</body>
+
+</html>

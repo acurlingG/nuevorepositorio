@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma o Resta de dos números</title>
+</head>
+<body>
+    <h2>Suma o Resta de dos números</h2>
+    
+    <label for="num1">Número 1:</label>
+    <input type="text" id="num1" placeholder="Ingresa el primer número"><br><br>
+    
+    <label for="num2">Número 2:</label>
+    <input type="text" id="num2" placeholder="Ingresa el segundo número"><br><br>
+   
+    <input type="radio" id="suma" name="operacion" value="sumar" checked>
+    <label for="suma">Sumar</label><br>
+    
+    <input type="radio" id="resta" name="operacion" value="restar">
+    <label for="resta">Restar</label><br><br>
+    
+    <button  onclick="calcular()">Calcular</button>
+    
+    <p id="resultado"></p>
+    
+    <script>
+        function calcular() {
+           
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            
+         
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('resultado').innerText = "Por favor, ingresa números válidos.";
+                return;
+            }
+            
+           
+            let operacion = document.querySelector('input[name="operacion"]:checked').value;
+            let resultado;
+            
+        
+            if (operacion === "sumar") {
+                resultado = num1 + num2;
+            } else if (operacion === "restar") {
+                resultado = num1 - num2;
+            }
+            
+            document.getElementById('resultado').innerText = "El resultado es: " + resultado;
+        }
+    </script>
+</body>
+</html>

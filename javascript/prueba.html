@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: lightcyan;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <label for="l1">Numero 1</label>
+    <br>
+    <input id="n1" type="">
+    <br>
+    <label for="l2">Numero 2</label>
+    <br>
+    <input id="n2" type="">
+    <br>
+    <button id="boton1" onclick="forx()"> Calcular   </button>
+
+    <label for="resultado"> </label> 
+    <p id="result"></p>
+
+
+    <script>
+
+
+
+function forx (){
+            let num1 = parseFloat(document.getElementById('n1').value);
+            for( var i = 0; i <= 100; i++){
+                document.write(i);
+                document.write("<br>");
+            }
+
+        }
+
+
+        function whilex (){
+            let num1 = parseFloat(document.getElementById('n1').value);
+            while ( num1 < 10){
+                document.write(num1);
+                document.write("<br>");
+                num1++;
+            }
+
+        }
+
+        function iff(){
+            let num1 = parseFloat(document.getElementById('n1').value);
+            let num2 = parseFloat(document.getElementById('n2').value);
+           if (num1>num2) {
+            document.getElementById("result").innerText = "num1 es mayor";
+           } else
+           document.getElementById("result").innerText = "num2 es mayor";
+        }
+       function sumar()
+       {
+            let num1 = parseFloat(document.getElementById('n1').value);
+            let num2 = parseFloat(document.getElementById('n2').value);
+            total = num1 + num2;
+            document.getElementById("result").innerText = total;
+       }
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // primitivas o por referencia
+
+        let nulo = null;
+        let nombre = "Catalina";
+        let numero = 20;
+        let decimal = 21.3;
+        let apellido = 'lopez';
+        var boleano = true;
+        var numeroTelefono = '111111';
+        const edad = 20;  // el valor no cambia
+        //  edad= 25;
+        document.write('<br>');
+        document.write('Edad: ', edad);
+        document.write('<br>');
+        document.write(nombre);
+        document.write('<br>');
+        document.write(numero);
+        document.write('<br>');
+        document.write(nombre + ' ' + apellido);
+        document.write('<br>');
+        document.write(nombre, ' ', apellido);
+        document.write('<br>');
+        document.write(numero + 5);
+        document.write('<br>');
+        let persona = {
+            name: 'Jonathan',
+            grade: 100,
+            age: 25
+        }
+
+        // referencia utlizando notacion de punto
+        document.write('Nombre: ' + persona.name + ' Edad: ' + persona.age + ' Nota:' + persona.grade);
+        document.write('<br>');
+
+        // referncia utiliando notacion corchetes
+        let selecionar = 'name';
+        persona[selecionar] = 'Christopher';
+        document.write(persona.name);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+      let colores = ['rojo', 'azul' , 'amarillo'];
+      let numeros = [9, 7, 6 , 10];
+     //               0         1         2
+      document.write(colores);
+      document.write('<br>');
+      colores[3] = 'verde';
+      document.write('<br>');
+      document.write(colores);
+      document.write('<br>');
+      document.write(colores[3]);
+      document.write('<br>');
+      colores[4]=true;
+      colores[5]=33;
+      document.write('<br>');
+      document.write(colores);
+      numeros[4]='h';
+      document.write('<br>');
+      document.write(numeros);
+      //tamano del arreglo
+      document.write('<br>');
+      document.write('Tamano: ',numeros.length);
+      document.write('<br>');
+      document.write('ultimo elemento: ' + numeros[numeros.length -1] );
+      document.write('<br>');
+
+      // unir dos arreglos
+      let letras = ['a','b','c'];
+      let numero = [1,2,3];
+
+      document.write ('union dos arreglos: ' + letras.concat(numero));
+      document.write('<br>');
+        //Arrays pop
+        document.write('elemento que sale: ' + letras.pop());
+       
+        document.write('<br>');
+        document.write(letras);
+
+        //Array push
+        letras.push('z')
+        document.write('<br>');
+        document.write(letras);
+
+    </script>
+
+</body>
+
+</html>

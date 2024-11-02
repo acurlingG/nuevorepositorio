@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="nombre"> Digite un nombre: </label>
+    </div>
+
+    <div>
+        <input type="text" id="tnombre">  
+    </div>
+
+    <div>
+        <button id="boton" onclick="mostrarNombre"  Text="Aceptar">Mostrar</button>
+    </div>
+     
+      
+    <script>
+           function mostrarNombre (){
+            let n = document.getElementById('tnombre');
+            document.write(n);
+           }
+
+    </script>
+</body>
+</html>

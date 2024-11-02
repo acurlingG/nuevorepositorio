@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Fila</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabla con botón para agregar fila</h2>
+
+<input type="text" id="nombre">
+<br>
+<table id="miTabla">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>telefono</th>
+        <th>dreciion</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>30</td>
+        <td>12312 </td>
+        <td>san jose </td>
+    </tr>
+</table>
+
+<br>
+
+<button onclick="agregarFila()">Agregar Fila</button>
+
+<script>
+function agregarFila() {
+
+    var tabla = document.getElementById("miTabla");
+    var nuevaFila = tabla.insertRow();
+    var celda1 = nuevaFila.insertCell(0);
+    var celda2 = nuevaFila.insertCell(1);
+    var celda3 = nuevaFila.insertCell(2);
+    var celda4 = nuevaFila.insertCell(3);
+    celda1.innerHTML = document.getElementById("nombre").value;
+    celda2.innerHTML = "Nueva Edad";
+    celda3.innerHTML = "telefono";
+    celda4.innerHTML = "direccion";
+}
+</script>

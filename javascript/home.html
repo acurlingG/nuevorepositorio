@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        <h1>Calculadora</h1>
+    </p>
+
+<label for="Valor1">Valor 1:    </label>
+<br>
+<input type="text" id="t1">
+<br>
+<label for="Valor2">Valor 2:     </label>
+<br>
+<input type="text" id="t2">
+<br>
+<button type="button" id="boton"  text="valor"  onclick="sumar()">+</button>
+<button type="button" id="boton"  text="valor"  onclick="sumar()">-</button>
+<button type="button" id="boton"  text="valor"  onclick="sumar()">*</button>
+
+<button type="button" id="boton"  text="valor"  onclick="sumar()">Aceptar</button>
+<br>
+    
+<label> Resultado: </label>
+<div>
+    <p id="tresultado"></p>
+</div>
+
+    <script>
+
+   function Alerta(){
+    alert("Error linea 45");
+   }
+
+    function saludar(nombre, edad){
+     document.write("hola " + nombre + "su edad es: "+ edad );
+    }
+    
+    function sumar() {
+        let num1 = parseFloat(document.getElementById("t1").value);
+        let num2 = parseFloat(document.getElementById("t2").value);
+        
+      while(num1!= num2)
+       {
+          document.write("<br>");
+          document.write(num1)
+          num1++;
+
+       } 
+    
+        
+        
+       
+
+    }
+     
+
+    </script>
+
+
+</body>
+</html>
